@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap'); 
+:root {
+    font-family: 'Nunito', sans-serif;
+    --main-color: black; --accent-color: white; scroll-behavior: smooth;
+}
+
+.media_social a {
+    border: 1px solid transparent;
+    width: 33px;
+}
+
+.media_social {
+    background-color: var(--main-color);
+    ; display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu a:hover {
+    border-color: #ed3b3b;
+    text-align: center;
+}
+
+.banner {
+    background-image: url(../img/plate.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.banner p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: var(--accent-color);
+    ; text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    ; text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: var(--main-color);
+    ; text-align: center
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: var(--main-color);
+    ; text-transform: uppercase;
+    text-align: center;
+}
+
+.projects-card img {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: auto;
+}
+
+.projects-card h3 {
+    text-align: center;
+}
+
+.projects-card {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+@media (min-width: 600px) {
+    .projects-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.produckts-card img {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: auto;
+}
+
+.produckts-card {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+.produckts-card img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.produckts-card {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+@media (min-width: 600px) {
+    .produckts-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .produckts-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#process {
+    background-color: #dbbfbf;
+}
+
+.process-card img {
+    max-width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.process-card h3 {
+    text-align: center;
+    display: block;
+    margin: auto
+}
+
+.process-card {
+    border: 1px solid transparent;
+    margin: 10px;
+    padding: 5px;
+}
+
+@media (min-width: 600px) {
+    .process-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .process-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.produckts-card img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.produckts-card {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+#ouroffer {
+    background-image: url(../img/fire.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    text-align: center;
+}
+
+#ouroffer img {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
+
+#ouroffer h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+#ouroffer p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: var(--accent-color);
+    display: block;
+    text-align: center;
+    padding: 3px;
+}
+
+#readytoworkwithus {
+    background-color: #ed0909;
+    text-align: center;
+}
+
+#readytoworkwithus h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+#readytoworkwithus p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.designers-card {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+.designers-card img {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
+
+footer {
+    display: inline-block;
+    min-width: 120px;
+    display: grid;
+    align-items: center;
+}
+
+#contackts {
+    background-color: var(--main-color);
+    ; text-align: center;
+}
+
+#contacktsandmaaps {
+    background-color: var(--main-color);
+    ; }
+
+#contacktsandmaaps h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+#contacktsandmaaps p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#contackts {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+.contackt {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+@media (min-width: 800px) {
+    .contacktus {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
