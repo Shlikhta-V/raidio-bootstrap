@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Raido</title>
         <link rel="stylesheet" href="css/index.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
     </head>
     <body>
         <header id="home">
@@ -30,23 +31,23 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Про нас</a>
+                            <a class="nav-link active" aria-current="page" href="#aboutus">Про нас</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">Проекти</a>
+                            <a class="nav-link" href="#projects">Проекти</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Вироби</a>
+                            <a class="nav-link" href="#produckts">Вироби</a>
                             </li>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Наші контакти</a>
+                            <a class="nav-link" href="#contackts">Наші контакти</a>
                             </li>
                         </ul>
-                        <form class="d-flex">
+                       <!--<form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                            <button class="btn btn-outline-success" type="submit"> контакти</button>
+                        </form>*/-->
                         </div>
                     </div>
                  </nav>
@@ -82,11 +83,11 @@
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden"></span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden"></span>
                 </a>
              </div>
         </header>
@@ -173,7 +174,7 @@
                         <p>Після перегляду проекту проект переходить до стадії розробки.</p>
                     </article>
                     <article class="process-card">
-                        <h3>Готовий продукт</h3>
+                        <h3>Продукт</h3>
                         <img src="img/lamp.svg" alt="Finished product">
                         <p>Після завершення проектування та завершення виробництва замовник отримує речі які не мають аналогів.</p>
                     </article>
@@ -191,22 +192,30 @@
             <section id="readytoworkwithus">
                 <h2>Готові працювати з нами?</h2>
                 <p>Наша команда дизайнерів готова працювати над вашим проектом.</p>
-                <button>BECOME A CLIENT</button>
+                <button >зв’язатися з нами</button>
             </section>
             <section id="designers">
                 <h2>Дизайнери</h2>
                 <p>Наша команда дизайнерів готова працювати над вашим проектом.</p>
-                <article class="designers-card">
-                    <h3>Галишин Юлія</h3>
-                    <img src="img/yulia.jpg" alt="designers">
-                    <p>10 років досвіду</p>
-                    <p>Висококваліфікований професійний дизайнер з більш ніж 10-річним досвідом роботи.</p>
-                </article>
+                <div class="ourdesigners">
+                    <article class="designers-card">
+                        <h3>Галишин Юлія</h3>
+                        <img src="img/yulia.jpg" alt="designers">
+                        <p>10 років досвіду</p>
+                        <p>Висококваліфікований професійний дизайнер з більш ніж 10-річним досвідом роботи.</p>
+                    </article>
+                    <article class="designers-card">
+                        <h3>Галишин Юлія</h3>
+                        <img src="img/yulia.jpg" alt="designers">
+                        <p>10 років досвіду</p>
+                        <p>Висококваліфікований професійний дизайнер з більш ніж 10-річним досвідом роботи.</p>
+                    </article>
+                 </div>   
             </section>
         </main>
         <footer>
             <h2 id="contackts">Хочете зв’язатися з нами?</h2>
-            <form>
+            <!--<form>
                 <label>
                     <input type="text" name="user-name" placeholder="Enter your full name" required>
                 </label>
@@ -224,24 +233,43 @@
                 </label>
                 <br>
                 <input type="submit">
+            </form>-->
+            <form id="form">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Enter your full namer</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Enter your phone number</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Enter your e-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Type your message</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary">зв’язатися з нами</button>
             </form>
             <section id="contacktsandmaaps">
                 <div class="contacktus">
-                    <div class="contackt">
+                    <article class="contackt">
                         <h2>Raido Glass Studio</h2>
-                    </div>
-                    <div class="contackt">
-                        <p>Контактний телефон</p>
+                    </article>
+                    <article class="contackt">
+                        <h2>Контактний телефон</h2>
                         <p>+1 (234) 567 89 00</p>
-                        <div class="contackt">
-                            <p>Напишіть нам</p>
-                            <p>Raidoglassstudio@gmail.com</p>
-                        </div>
-                        <div class="contackt">
-                            <p>Заходь в гості до нас</p>
-                            <p>м.Львів, вул.Пасічна 131</p>
-                        </div>
-                    </div>
+                    </article>
+                    <article class="contackt">
+                        <h2>Напишіть нам</h2>
+                        <p>Raidoglassstudio@gmail.com</p>
+                    </article>
+                    <article class="contackt">
+                        <h2>Заходь в гості до нас</h2>
+                        <p>м.Львів, вул.Пасічна 131</p>
+                    </article>
                 </div>
             </section>
         </footer>

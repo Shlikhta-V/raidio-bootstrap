@@ -3,12 +3,12 @@
 :root {
     font-family: 'Nunito', sans-serif;
     --main-color: black; --accent-color: white; scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     max-width: 980px;
     margin: auto;
-    text-align: center;
 }
 
 .media_social a {
@@ -57,6 +57,7 @@ h2 {
     color: var(--main-color);
     text-transform: uppercase;
     text-align: center;
+    padding: 20px;
 }
 
 p {
@@ -70,14 +71,22 @@ h3 {
     color: var(--main-color);
     ; text-transform: uppercase;
     text-align: center;
+    padding: 20px;
 }
-
+#readytoworkwithus button {
+    margin: 30px;
+    padding: 10px;
+}
+#aboutus {
+    padding: 20px;
+}
 .projects-card img {
     max-height: 300px;
     display: block;
     margin: auto;
+    padding: 20px;
 }
-.projects-list {
+#projects {
     background-color: #f1eded;
 }
 
@@ -85,23 +94,11 @@ h3 {
     text-align: center;
 }
 
-/*.projects-card {
-    border: 1px solid black;
-    margin: 10px;
-    padding: 5px;
-}*/
-
-@media (min-width: 600px) {
-    .projects-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 .produckts-card img {
     max-height: 300px;
     display: block;
     margin: auto;
+    padding: 20px;
 }
 
 .produckts-card {
@@ -114,6 +111,7 @@ h3 {
     max-width: 100%;
     display: block;
     margin: auto;
+    padding: 20px;
 }
 
 .produckts-card {
@@ -124,6 +122,10 @@ h3 {
 
 @media (min-width: 600px) {
     .produckts-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -143,12 +145,14 @@ h3 {
 
 #process {
     background-color: #dbbfbf;
+    padding: 20px;
 }
 
 .process-card img {
     max-width: 100px;
     display: block;
     margin: auto;
+    padding: 10px;
 }
 
 .process-card h3 {
@@ -180,6 +184,7 @@ h3 {
     max-width: 100%;
     display: block;
     margin: auto;
+    padding: 20px;
 }
 
 .produckts-card {
@@ -190,17 +195,19 @@ h3 {
 
 #ouroffer {
     background-image: url(../img/fire.jpg);
+    opacity: 0.9;
     background-size: cover;
     background-position: center;
     min-height: 300px;
     text-align: center;
+    padding: 20px;
 }
 
 #ouroffer img {
     max-width: 400px;
     display: block;
     margin: auto;
-    padding: 30px;
+    padding: 20px;
 }
 
 #ouroffer h2 {
@@ -215,6 +222,8 @@ h3 {
     display: block;
     text-align: center;
     padding: 3px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #readytoworkwithus {
@@ -241,10 +250,16 @@ h3 {
 }
 
 .designers-card img {
-    max-width: 400px;
+    max-width: 280px;
     display: block;
     margin: auto;
     padding: 30px;
+}
+@media (min-width: 600px) {
+    .ourdesigners {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 footer {
@@ -253,15 +268,20 @@ footer {
     display: grid;
     align-items: center;
 }
+#form button {
+    display: block;
+    align-items: center;
+    margin: 10px;
+}
 
 #contackts {
     background-color: var(--main-color);
-    ; text-align: center;
+    text-align: center;
 }
 
 #contacktsandmaaps {
     background-color: var(--main-color);
-    ; }
+    }
 
 #contacktsandmaaps h2 {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -284,6 +304,7 @@ footer {
 }
 
 .contackt {
+    display: block;
     border: 1px solid black;
     margin: 10px;
     padding: 5px;
