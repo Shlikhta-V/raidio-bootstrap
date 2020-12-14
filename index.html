@@ -39,7 +39,6 @@
                             <li class="nav-item">
                             <a class="nav-link" href="#produckts">Вироби</a>
                             </li>
-                            </li>
                             <li class="nav-item">
                             <a class="nav-link" href="#contackts">Наші контакти</a>
                             </li>
@@ -188,7 +187,7 @@
             <section id="readytoworkwithus">
                 <h2>Готові працювати з нами?</h2>
                 <p>Наша команда дизайнерів готова працювати над вашим проектом.</p>
-                <button class="btn btn-primary" href="#contackts" >зв’язатися з нами</button>
+                <button class="btn btn-primary">зв’язатися з нами</button>
             </section>
             <section id="designers">
                 <h2>Дизайнери</h2>
@@ -211,26 +210,26 @@
         </main>
         <footer>
             <h2 id="contackts">Хочете зв’язатися з нами?</h2>
-            <form id="form">
+            <form id="form" action="https://formspree.io/f/xbjpzqgy" method="POST">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Enter your full namer</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="names" class="form-label">Enter your full namer</label>
+                    <input type="text" class="form-control" id="names" name="names">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Enter your phone number</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="phone" class="form-label">Enter your phone number</label>
+                    <input type="text" class="form-control" id="phone" name="phone" >
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Enter your e-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="email" class="form-label">Enter your e-mail</label>
+                    <input type="text" class="form-control" id="email" name="email">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Type your message</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="massega" class="form-label">Type your message</label>
+                    <input type="text" class="form-control" id="massega" name="massega">
                 </div>
                 <button type="submit" class="btn btn-primary">зв’язатися з нами</button>
             </form>
-            <section id="contacktsandmaaps">
+            <div id="contacktsandmaaps">
                 <div class="contacktus">
                     <article class="contackt">
                         <h2>Raido Glass Studio</h2>
@@ -248,7 +247,7 @@
                         <p>м.Львів, вул.Пасічна 131</p>
                     </article>
                 </div>
-            </section>
+            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
