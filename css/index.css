@@ -33,13 +33,13 @@ body {
     height: 60px;
 }
 
-#carouselExampleCaptions h5 {
+#produckts-carousel h5 {
     font-size: 3.5rem;
     color: var(--accent-color);
     text-align: center;
 }
 
-#carouselExampleCaptions p {
+#produckts-carousel p {
     font-size: 1.5rem;
     color: var(--accent-color);
     text-align: center;
