@@ -278,12 +278,6 @@ footer {
     align-items: center;
 }
 
-/* #form {
-    display: block;
-    align-items: center;
-    margin: 10px;
-} */
-
 @media (min-width: 600px) {
     #form  {
         max-width: 500px;
@@ -292,19 +286,12 @@ footer {
         padding: 20px;
     }
 }
+
 #form button {
     display: block;
     align-items: center;
     margin: 10px;
-}
-
-@media (min-width: 600px) {
-    #footer-menu {
-        display: block;
-        align-items: center;
-        /* justify-content: center; */
-    }
-}
+} 
 
 #contackts {
     background-color: var(--main-color);
