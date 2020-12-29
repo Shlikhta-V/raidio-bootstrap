@@ -82,8 +82,6 @@ h3 {
 }
 .projects-card img {
     max-height: 300px; 
-    /* max-width: 260px;
-    height: 260px; */
     display: block;
     margin: auto;
     padding: 20px;
@@ -243,6 +241,17 @@ h3 {
     grid-template-columns: repeat(4, 1fr); 
     text-align: center;
 } 
+#saleimg{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+#button{
+    margin: 30px;
+    padding: 10px;
+}
+
 .designers-card {
     border: 1px solid black;
     margin: 10px;
@@ -268,10 +277,33 @@ footer {
     display: grid;
     align-items: center;
 }
+
+/* #form {
+    display: block;
+    align-items: center;
+    margin: 10px;
+} */
+
+@media (min-width: 600px) {
+    #form  {
+        max-width: 500px;
+        display: block;
+        margin: auto;
+        padding: 20px;
+    }
+}
 #form button {
     display: block;
     align-items: center;
     margin: 10px;
+}
+
+@media (min-width: 600px) {
+    #footer-menu {
+        display: block;
+        align-items: center;
+        /* justify-content: center; */
+    }
 }
 
 #contackts {
